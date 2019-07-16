@@ -1,0 +1,81 @@
+body, html{
+    border: 1px solid gray;
+    height: 100%;
+}
+html{
+    margin: 0px;
+}
+
+body{
+    background-image: url('elephant.jpg');
+    background-size: cover;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    border: 2px solid blue;
+}
+.form{
+    background-color: #C2893E;
+    border: 2px solid red;
+    display: flex;
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    border-radius: 20px;
+}
+li{
+    border: 1px solid purple;
+    flex-grow: 1;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+span button{
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border: none;
+    color: white;
+    padding: 28px 32px;
+    border-radius: 10px; 
+}
+li:last-child span{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+button:nth-child(4):hover{
+    background-color: #555555;
+}
+button:nth-child(3):hover
+{
+    background-color: #003000;
+}
+button:nth-child(2):hover{
+    background-color: #005500;
+}
+button:nth-child(1):hover{
+    background-color: #008000;
+}
+button:hover{
+    cursor: pointer;
+}
+
+li:first-child span{
+    padding-top: 40px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
