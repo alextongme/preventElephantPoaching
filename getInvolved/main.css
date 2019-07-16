@@ -10,7 +10,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: green;
+    background-color: yellowgreen;
     justify-content: space-around;
   }
   li {
@@ -39,8 +39,8 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    color: yellowgreen;
-    background-color: green;
+    color: green;
+    background-color: yellowgreen;
   }
   p{
       border-radius: 15px;
@@ -54,7 +54,7 @@ ul {
   }
 
   body{
-      background-image: url(21366183.jpeg);
-      font-family: cursive;
+      background-image: url(cuteelephants.jpg);
+      font-family: fantasy;
       
   }
