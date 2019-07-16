@@ -1,17 +1,62 @@
-ul {
-    list-style-type: none;
+.container {
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    display: grid;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-  }
-  li {
-    float: left;
-  }
+}
+
+.mainBlocks {
+    scroll-snap-align: start;
+
+    display: grid;
+    height: 100vh;
+    justify-self: stretch;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.nav {
+    scroll-snap-align: start;
+    display: grid;
+    justify-self: stretch;
+}
+
+li {
+    border: 1rem;
+    border-style: solid;
+    border-color: black;
+}
+
+#title {
+    justify-self: center;
+    align-self: center;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 5em;
+    color: white;
+}
   
-  li a {
-    display: block;
-    color:white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
+#first {
+    background-image: url("elephant.jpg");
+}
+
+#second {
+    background-color: #086788;
+}
+
+#third {
+    background-color: #F0C808;
+}
+
+#fourth {
+    background-color: #FFF1D0;
+}
+
+#fifth {
+    background-color: #07A0C3;
+}
+
+#sixth {
+    background-color: #DD1C1A;
+}
