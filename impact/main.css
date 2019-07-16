@@ -9,7 +9,6 @@
 
 .mainBlocks {
     scroll-snap-align: start;
-
     display: grid;
     height: 100vh;
     justify-self: stretch;
@@ -18,43 +17,65 @@
 }
 
 .nav {
-    scroll-snap-align: start;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    scroll-snap-align: start;
     justify-self: stretch;
+    background-color: #FFF1D0;
+    color: #086788;
+    height: 15vh;
 }
 
-li {
-    border: 1rem;
-    border-style: solid;
-    border-color: black;
+a {
+    text-align: center;
+    align-self: center;
+    color: #086788;
+    text-decoration: none;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 1.5em;
 }
 
-#title {
+a:hover {
+    background-color: #DD1C1A;
+}
+
+
+.textBlock{
     justify-self: center;
     align-self: center;
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 5em;
-    color: white;
+    font-size: 3em;
+    padding: 3em;
 }
   
 #first {
-    background-image: url("elephant.jpg");
+    background-image: url("images/first.jpg");
+    background-size: cover;
+    color:#FFF1D0;
+    font-size: 2em;
+    text-align: center;
 }
 
 #second {
     background-color: #086788;
+    color:#FFF1D0;
 }
 
 #third {
-    background-color: #F0C808;
+    /* background-color: #F0C808; */
+    background-image: url("images/second.jpg");
+    background-size: cover;
+    /* color:#086788; */
 }
 
 #fourth {
     background-color: #FFF1D0;
+    
 }
 
 #fifth {
-    background-color: #07A0C3;
+    background-image: url("images/second.jpg");
+    /* background-color: #07A0C3; */
 }
 
 #sixth {
