@@ -26,9 +26,8 @@ ul {
   }
   
   li a:hover {
-    background-color: yellowgreen;
+    background-color: green;
   }
-
   div#footer{
     /* display:flex;
     flex-flow: column wrap;        
@@ -50,6 +49,7 @@ ul {
       right: 15%;
       border: 1px solid;
       width: 70%;
+      padding: 10px;
       border-radius: 25px;
   }
 
