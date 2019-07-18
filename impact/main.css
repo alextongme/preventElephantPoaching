@@ -9,7 +9,6 @@
 
 .mainBlocks {
     scroll-snap-align: start;
-
     display: grid;
     height: 100vh;
     justify-self: stretch;
@@ -17,44 +16,95 @@
     background-size: auto;
 }
 
+header {
+    height: 15vh;
+    width: 40vw;
+    position: fixed;
+    padding-left: 50px;
+}
+
 .nav {
-    scroll-snap-align: start;
+    height: 100%;
+    width: 100%;
     display: grid;
+    grid-template-columns: auto auto auto auto;
+    scroll-snap-align: start;
     justify-self: stretch;
+    color: #086788;
 }
 
 li {
-    border: 1rem;
-    border-style: solid;
-    border-color: black;
+    height: 100%;
+    display: grid;
 }
 
-#title {
+a {
+    text-align: center;
+    align-self: center;
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 100%;
+}
+
+li:hover{
+   background: white;
+   background: black;
+}
+
+.logo{
+    background-image: url("images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+
+    animation: invert 5s infinite;
+      -webkit-animation: invert 5s infinite; /* Chrome and Safari */
+
+    @keyframes invert
+    {
+      0%   {filter: invert(0%)}
+      50%  {filter: invert(100%)}
+      100% {filter: invert(50%)}
+    }
+}
+
+.textBlock{
     justify-self: center;
     align-self: center;
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 5em;
-    color: white;
+    font-size: 3em;
+    padding: 3em;
 }
   
 #first {
-    background-image: url("elephant.jpg");
+    background-image: url("images/first.jpg");
+    background-size: cover;
+    color:#FFF1D0;
+    font-size: 2em;
+    text-align: center;
 }
 
 #second {
     background-color: #086788;
+    color:#FFF1D0;
 }
 
 #third {
-    background-color: #F0C808;
+    /* background-color: #F0C808; */
+    background-image: url("images/second.jpg");
+    background-size: cover;
+    /* color:#086788; */
 }
 
 #fourth {
     background-color: #FFF1D0;
+    
 }
 
 #fifth {
-    background-color: #07A0C3;
+    background-image: url("images/second.jpg");
+    /* background-color: #07A0C3; */
 }
 
 #sixth {
