@@ -18,33 +18,55 @@
 
 header {
     height: 15vh;
-    width: 100vw;
+    width: 40vw;
     position: fixed;
+    padding-left: 50px;
 }
 
 .nav {
+    height: 100%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto auto auto auto;
     scroll-snap-align: start;
     justify-self: stretch;
-    height: 100%;
     color: #086788;
+}
+
+li {
+    height: 100%;
+    display: grid;
 }
 
 a {
     text-align: center;
     align-self: center;
-    color: #086788;
+    color: black;
     text-decoration: none;
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 1.5em;
+    font-family: "Open Sans";
+    font-size: 100%;
 }
 
-a:hover {
-    /* background-color: #DD1C1A; */
-    /* testing */
+li:hover{
+   background: white;
 }
 
+.logo{
+    background-image: url("images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+
+    animation: invert 5s infinite;
+      -webkit-animation: invert 5s infinite; /* Chrome and Safari */
+
+    @keyframes invert
+    {
+      0%   {filter: invert(0%)}
+      50%  {filter: invert(100%)}
+      100% {filter: invert(50%)}
+    }
+}
 
 .textBlock{
     justify-self: center;
