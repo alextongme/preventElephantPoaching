@@ -16,14 +16,19 @@
     background-size: auto;
 }
 
+header {
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+}
+
 .nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     scroll-snap-align: start;
     justify-self: stretch;
-    background-color: #FFF1D0;
+    height: 100%;
     color: #086788;
-    height: 15vh;
 }
 
 a {
@@ -36,7 +41,7 @@ a {
 }
 
 a:hover {
-    background-color: #DD1C1A;
+    /* background-color: #DD1C1A; */
 }
 
 
