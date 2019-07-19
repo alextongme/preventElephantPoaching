@@ -2,7 +2,9 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
-
+/* ul:hover{
+  animation-play-state: running;
+} */
 ul {
     border-radius: 15px;
     display:flex;
@@ -12,6 +14,14 @@ ul {
     overflow: hidden;
     background-color: yellowgreen;
     justify-content: space-around;
+  }
+  @keyframes pulse {
+    0% {
+      background-color: yellowgreen;
+    }
+    100% {
+      background-color: green;
+    }
   }
   li {
     float: left;
@@ -25,8 +35,9 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
-    background-color: green;
+  li:hover {
+    animation: pulse 2s infinite;
+    /* background-color: green;*/
   }
   div#footer{
     /* display:flex;
