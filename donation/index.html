@@ -13,39 +13,64 @@
     </head>
     <body>
             <ul class="nav">
-                    <li><a href="../impact/index.html">Make an Impact</a></li>
-                    <li><a href="../getInvolved/index.html">Get Involved</a></li>
-                    <li><a href="../donation/index.html">Donate</a></li>
-                </ul>
+                    <li class= "trapezoid"><a href="../impact/index.html">Make an Impact</a></li>
+                    <li class="trapezoid"><a href="../getInvolved/index.html">Get Involved</a></li>
+                    <li class="trapezoid"><a href="../donation/index.html">Donate</a></li>
+            </ul>
         <h1> Donate Below Today! </h1>
-        <div>
-                <ul class="form">
-                    <li>
-                        Personal Information: <br>
-                        <span>
-                            First Name:
-                            <input type="text">
-                            Last Name:
-                            <input type="text">
-                            Email Address:
-                            <input type= "text">
-                            Phone:
-                            <input type="text">
-                        </span>
-                    </li>
-                    <li>
-                        Donation Amount: <br>
-                        <span>
-                            <button> $10 </button>
-                            <button> $25 </button>
-                            <button> $50 </button>
-                            <button> Custom Amount</button>
-                        </span>
-                    </li>
-                </ul>
-        </div>
+        <div class="container">
+                <form class = "form">
+                    <label class=" subtitle"for="Donation Amount">Please Choose an Amount Below: </label>
+                    <ul class="buttons">
+                        <input name="1"type ="radio" >
+                        <input name="1"type ="radio" >
+                        <input name="1"type ="radio" >
+                        <input name="1"type ="radio" checked> 
+                    </ul>
+                    <ul class="button-label">
+                        <label> $10 </label>
+                        <label> $25 </label>
+                        <label> $50 </label>
+                        <label> $99 </label>
+                    </ul>
+                    <br>
+                    <label  class=" subtitle"for="personal"> Enter Your Personal Information: </label>
+                    <ul class="info">
+                        <label for="firstN"> First Name: </label>
+                        <input class= "name"type="text" required>
+                        <label for="lastN"> Last Name: </label>
+                        <input class="name"type="text" required>
+                    </ul>
+                    <br>
+                    <ul class="info-2">
+                            <label for="email"> Email: </label>
+                            <input class= "email" type="email" required>
+                            <label for="phone"> Phone Number: </label>
+                            <input type="number" maxlength="11">
+                    </ul>
 
-            <img src=""
+                    <br>
+                    <label  class=" subtitle"for="financal"> Enter Card Information Below: </label>
+                    <ul class="card">
+                        
+                        <label for="fullN"> Card Holder's Name: </label>
+                        <input class="name"type="text" required>
+                        <label for="Exp"> Expiration Date: </label>
+                        <input class="e" type="number" required maxlength="2">
+                        <input class= "e" type="number" required maxlength="2">
+                    </ul>
+                    <ul class="card-2">
+                            <label for="firstC"> Card Number </label>
+                            <input type="number" required maxlength="4">
+                            <input type="number" required maxlength="4">
+                            <input type="number" required maxlength="4">
+                            <input type= "number" required maxlength="4">
+                            <label for="cvv"> CVV Number: </label>
+                            <input type="number" required maxlength="3">
+                    </ul>
+
+                    <input class= "submit"type="submit" value="Make A Donation">
+                </form>
         </div>
         
     </body>
